@@ -1,21 +1,10 @@
-import React, {useState, useEffect} from 'react'
-import Results from "./Results";
+import React from 'react'
 import chapter1 from '../../assets/images/chapter1.png'; 
 import chapter2 from '../../assets/images/chapter2.png'; 
 import chapter3 from '../../assets/images/chapter3.png'; 
 import chapter4 from '../../assets/images/chapter4.png'; 
 
 function Aboutus() {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
- 
-
-
-    useEffect(() => {
-        const changeWidth = () => {
-          setScreenWidth(window.innerWidth);
-        }
-        window.addEventListener('resize', changeWidth)
-    }, []);
      return (
         <>
             <h1 className="aboutusTitle">About Us</h1>
@@ -25,29 +14,29 @@ function Aboutus() {
               <div className="itemsContainer">
                 <img className='grid-item grid-item-3' src={chapter1} alt='' />
                 <div className="itemContent">
-                    <p>Chapter I</p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</span>
+                    <span>Chapter I</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
                 </div>
               </div>
               <div className="itemsContainer">
                 <img className='grid-item grid-item-5' src={chapter2} alt='' />
                 <div className="itemContent">
-                    <p>Chapter II</p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</span>
+                    <span>Chapter II</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
                 </div>
               </div>
               <div className="itemsContainer">
                 <img className='grid-item grid-item-6' src={chapter3} alt='' />
                 <div className="itemContent">
-                    <p>Chapter III</p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</span>
+                    <span>Chapter III</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
                 </div>
               </div>
               <div className="itemsContainer">
                 <img className='grid-item grid-item-7' src={chapter4} alt='' />
                 <div className="itemContent">
-                    <p>Chapter IV</p>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</span>
+                    <span>Chapter IV</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
                 </div>
               </div>
             </div>

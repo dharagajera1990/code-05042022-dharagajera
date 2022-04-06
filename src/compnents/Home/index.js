@@ -3,7 +3,6 @@ import Header from "./header";
 import Footer from "./Footer";
 import Aboutus from "./Aboutus";
 import Explore from "./Explore";
-import chapter1 from '../../assets/images/chapter1.png'; 
 import './style.css';
 import { FaSearch,FaAngleDown } from 'react-icons/fa';
 function index() {
@@ -36,7 +35,7 @@ function index() {
                     <input type="text" placeholder="Add guests" />
                   </div>
                   <div className="inputbox" id="search-bar">
-                    <a href="#"><FaSearch size={30} /><span>Search</span></a>
+                    <a href="/#"><FaSearch size={30} /><span>Search</span></a>
                   </div>
               </div>
             </div>

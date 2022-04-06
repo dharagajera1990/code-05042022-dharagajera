@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import Results from "./Results";
 import { FaAngleDown } from 'react-icons/fa';
 
 function Header() {
@@ -19,20 +18,20 @@ useEffect(() => {
      return (
         <nav>
             <div className="menu-wapper">
-                <a className="logo" href="#">Your Logo</a>
+                <a className="logo" href="/#">Your Logo</a>
                 {(toggleMenu || screenWidth > 500) && (
                     <ul className="list">
                       <li className="items">Explore</li>
                       <li className="items">About Us</li>
-                        <div class="subnav">
+                        <ul class="subnav">
                           <li className="items subnavbtn">Cities <FaAngleDown style={{ fill: 'white' }} /></li>
-                            <div class="subnav-content">
+                            <ul class="subnav-content">
                               <li><a href="#company">Admedabad</a></li>
                               <li><a href="#team">Surat</a></li>
                               <li><a href="#careers">Bhavnagar</a></li>
-                            </div>
-                        </div>
-                      <li className="items"><a href="#">Call</a></li>
+                            </ul>
+                        </ul>
+                      <li className="items"><a href="/#">Call</a></li>
                     </ul>
                 )}
 
